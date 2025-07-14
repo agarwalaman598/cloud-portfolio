@@ -8,10 +8,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission
   app.post("/api/contact", async (req, res) => {
     try {
+      console.log("Received contact form data:", req.body);
+      
       const validatedData = insertContactSchema.parse(req.body);
+      console.log("Validated data:", validatedData);
       
       // Create contact in storage
       const contact = await storage.createContact(validatedData);
+      console.log("Created contact:", contact);
       
       // In a real application, you would send an email here
       // For now, we'll just log the contact submission
@@ -23,6 +27,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     } catch (error) {
       console.error("Contact form error:", error);
+      console.error("Error details:", {
+        message: error.message,
+        stack: error.stack,
+        name: error.name
+      });
       
       if (error instanceof z.ZodError) {
         res.status(400).json({ 

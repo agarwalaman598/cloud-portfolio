@@ -1,6 +1,6 @@
 import { users, contacts, type User, type InsertUser, type Contact, type InsertContact } from "@shared/schema";
 import { db } from "./db";
-import { eq } from "drizzle-orm";
+import { eq, desc } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -38,7 +38,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getContacts(): Promise<Contact[]> {
-    return await db.select().from(contacts).orderBy(contacts.createdAt);
+    return await db.select().from(contacts).orderBy(desc(contacts.createdAt));
   }
 }
 
