@@ -29,9 +29,10 @@ export default function AboutSection() {
   ];
 
   const highlights = [
-    "3+ years of cloud engineering experience",
-    "AWS & Azure certified professional",
-    "DevOps and Infrastructure automation expert",
+    "3+ years of full-stack development experience",
+    "Expert in Java, Python, and JavaScript ecosystems",
+    "1000+ LeetCode problems solved with 5-star rating",
+    "Published mobile apps with 10k+ downloads",
   ];
 
   return (
@@ -40,21 +41,21 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Dedicated cloud engineer with expertise in designing and implementing robust cloud solutions
+            Passionate full-stack developer specializing in modern web and mobile application development
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              As a Cloud Engineer, I specialize in architecting and deploying scalable cloud infrastructure solutions.
-              My expertise spans across major cloud platforms including AWS, Azure, and Google Cloud Platform,
-              with a strong focus on automation, security, and cost optimization.
+              As a Full Stack Developer, I specialize in building comprehensive applications using Java Spring Boot,
+              Python Django/Flask, and the MERN stack (MongoDB, Express.js, React, Node.js). My expertise extends
+              to mobile development with Flutter and native Android development with Kotlin and Java.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm passionate about leveraging cutting-edge technologies like Kubernetes, Docker, Terraform,
-              and CI/CD pipelines to streamline development workflows and enhance system reliability.
-              My goal is to help organizations achieve their digital transformation objectives through innovative cloud solutions.
+              I'm passionate about problem-solving and competitive programming, maintaining an active presence on
+              LeetCode with consistent daily practice. I enjoy creating efficient algorithms and scalable applications
+              that deliver exceptional user experiences across web and mobile platforms.
             </p>
 
             {/* Experience Highlights */}

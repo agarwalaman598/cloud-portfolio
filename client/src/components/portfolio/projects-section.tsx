@@ -5,28 +5,28 @@ import { ExternalLink, Github } from "lucide-react";
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "Multi-Cloud Infrastructure Automation",
-      description: "Designed and implemented a comprehensive multi-cloud infrastructure solution using Terraform, enabling seamless deployments across AWS, Azure, and GCP with automated scaling and monitoring.",
-      image: "https://images.unsplash.com/photo-1551808525-51a94da548ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["Terraform", "AWS", "Azure", "Kubernetes"],
+      title: "E-Commerce MERN Stack Application",
+      description: "Built a full-featured e-commerce platform using MongoDB, Express.js, React, and Node.js with JWT authentication, payment integration, and real-time order tracking. Features include admin dashboard and inventory management.",
+      image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      tags: ["React", "Node.js", "MongoDB", "Express"],
     },
     {
-      title: "Enterprise CI/CD Pipeline",
-      description: "Built a robust CI/CD pipeline using GitLab CI and Jenkins, reducing deployment time by 70% and implementing automated testing, security scanning, and rollback mechanisms.",
-      image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["GitLab CI", "Jenkins", "Docker", "ArgoCD"],
+      title: "Task Management Mobile App",
+      description: "Developed a cross-platform mobile application using Flutter with real-time synchronization, offline support, and cloud storage. Integrated push notifications and biometric authentication for enhanced user experience.",
+      image: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      tags: ["Flutter", "Dart", "Firebase", "SQLite"],
     },
     {
-      title: "Cloud Monitoring & Observability Platform",
-      description: "Implemented a comprehensive monitoring solution using Prometheus and Grafana, providing real-time insights into application performance and infrastructure health.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["Prometheus", "Grafana", "ELK Stack", "AlertManager"],
+      title: "Spring Boot Microservices Architecture",
+      description: "Architected and implemented a scalable microservices system using Java Spring Boot with service discovery, API gateway, and distributed tracing. Deployed using Docker containers with PostgreSQL database.",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      tags: ["Java", "Spring Boot", "PostgreSQL", "Docker"],
     },
     {
-      title: "DevSecOps Security Framework",
-      description: "Developed a security-first approach to cloud deployments, integrating automated security scanning, compliance checks, and vulnerability management into the development lifecycle.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["SonarQube", "Trivy", "HashiCorp Vault", "OPA"],
+      title: "LeetCode Problem Solver Dashboard",
+      description: "Created a comprehensive dashboard to track LeetCode progress with Python automation scripts. Features include difficulty analysis, topic categorization, and performance metrics with data visualization.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      tags: ["Python", "Django", "Chart.js", "Web Scraping"],
     },
   ];
 
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Featured Projects</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Showcase of cloud infrastructure and automation projects
+            Showcase of full-stack web applications, mobile apps, and competitive programming solutions
           </p>
         </div>
 

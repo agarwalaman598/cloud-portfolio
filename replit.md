@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack portfolio application built with a modern web stack featuring a React frontend, Express backend, and PostgreSQL database. The application showcases a cloud engineer's portfolio with sections for about, skills, projects, and contact information. It uses shadcn/ui components for a polished UI and includes a contact form with backend processing.
+This is a full-stack portfolio application built with a modern web stack featuring a React frontend, Express backend, and PostgreSQL database. The application showcases a full-stack developer's portfolio specializing in Java, Python, frameworks, LeetCode, MERN stack, Flutter, and Android development. It includes sections for about, skills, projects, and contact information with shadcn/ui components for a polished UI and includes a contact form with backend processing.
 
 ## User Preferences
 
@@ -27,10 +27,11 @@ Preferred communication style: Simple, everyday language.
 - **Logging**: Custom request/response logging middleware
 
 ### Data Storage
-- **Database**: PostgreSQL (configured for use with Neon)
-- **ORM**: Drizzle ORM with PostgreSQL dialect
+- **Database**: PostgreSQL with Neon serverless driver
+- **ORM**: Drizzle ORM with PostgreSQL dialect and DatabaseStorage implementation
 - **Schema**: Type-safe database schema with Zod validation
 - **Migrations**: Drizzle Kit for schema management
+- **Connection**: Environment-based configuration with connection pooling
 
 ## Key Components
 
@@ -44,15 +45,15 @@ Preferred communication style: Simple, everyday language.
 - `GET /api/contacts`: Retrieve all contact submissions (admin)
 
 ### Frontend Pages
-- **Portfolio Page**: Main landing page with sections for hero, about, skills, projects, and contact
+- **Portfolio Page**: Main landing page showcasing full-stack development expertise
 - **404 Page**: Custom not found page with helpful messaging
 
 ### UI Components
 - **Navigation**: Fixed header with smooth scrolling and theme toggle
-- **Hero Section**: Profile image, introduction, and call-to-action buttons
-- **About Section**: Personal information and social media links
-- **Skills Section**: Categorized skill display with progress indicators
-- **Projects Section**: Featured project showcase with images and descriptions
+- **Hero Section**: Full-stack developer profile with programming focus
+- **About Section**: Java, Python, MERN, Flutter, and competitive programming expertise
+- **Skills Section**: Backend development, frontend, mobile apps, and problem-solving skills
+- **Projects Section**: MERN stack, Flutter apps, Spring Boot microservices, and LeetCode solutions
 - **Contact Section**: Form with validation and toast notifications
 - **Footer**: Social links and copyright information
 
@@ -111,5 +112,21 @@ Preferred communication style: Simple, everyday language.
 4. **Theme System**: CSS variables with light/dark mode support
 5. **Development Experience**: Hot reload, error overlays, and Replit integration
 6. **Database Strategy**: Serverless PostgreSQL for scalability and ease of deployment
+
+## Recent Changes (July 14, 2025)
+
+### Portfolio Content Update
+- **Database Migration**: Successfully migrated from MemStorage to DatabaseStorage using PostgreSQL
+- **Content Focus**: Updated portfolio to showcase full-stack development expertise including:
+  - Java Spring Boot and Python Django/Flask backend development
+  - MERN stack (MongoDB, Express.js, React, Node.js) applications
+  - Flutter and Android mobile development
+  - Competitive programming and LeetCode problem solving (1000+ problems)
+  - Modern frameworks and development tools
+
+### Technical Updates
+- **Database Setup**: Implemented Neon PostgreSQL with Drizzle ORM
+- **Schema Migration**: Successfully pushed database schema using `npm run db:push`
+- **Storage Layer**: Replaced in-memory storage with database-backed storage
 
 The application follows modern full-stack patterns with emphasis on type safety, developer experience, and production readiness.

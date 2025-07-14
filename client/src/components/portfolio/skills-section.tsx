@@ -1,65 +1,65 @@
-import { Cloud, Cog, Code, Infinity, Shield, Database } from "lucide-react";
+import { Coffee, Code, Smartphone, Globe, Trophy, Database } from "lucide-react";
 
 export default function SkillsSection() {
   const skillCategories = [
     {
-      title: "Cloud Platforms",
-      icon: Cloud,
+      title: "Backend Development",
+      icon: Coffee,
       color: "bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-400",
       skills: [
-        { name: "AWS", level: 83 },
-        { name: "Azure", level: 80 },
-        { name: "GCP", level: 75 },
+        { name: "Java Spring Boot", level: 90 },
+        { name: "Python Django", level: 85 },
+        { name: "Node.js/Express", level: 88 },
       ],
     },
     {
-      title: "DevOps & Automation",
-      icon: Cog,
+      title: "Frontend Development",
+      icon: Globe,
       color: "bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400",
       skills: [
-        { name: "Kubernetes", level: 83 },
-        { name: "Docker", level: 100 },
-        { name: "Terraform", level: 80 },
+        { name: "React.js", level: 92 },
+        { name: "TypeScript", level: 85 },
+        { name: "HTML/CSS", level: 95 },
       ],
     },
     {
-      title: "Programming",
+      title: "Programming Languages",
       icon: Code,
       color: "bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400",
       skills: [
-        { name: "Python", level: 83 },
-        { name: "Bash", level: 80 },
-        { name: "PowerShell", level: 75 },
+        { name: "Java", level: 93 },
+        { name: "Python", level: 90 },
+        { name: "JavaScript", level: 88 },
       ],
     },
     {
-      title: "CI/CD & Tools",
-      icon: Infinity,
+      title: "Mobile Development",
+      icon: Smartphone,
       color: "bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-400",
       skills: [
-        { name: "Jenkins", level: 80 },
-        { name: "GitLab CI", level: 83 },
-        { name: "GitHub Actions", level: 75 },
+        { name: "Flutter/Dart", level: 85 },
+        { name: "Android/Kotlin", level: 80 },
+        { name: "React Native", level: 75 },
       ],
     },
     {
-      title: "Monitoring & Security",
-      icon: Shield,
+      title: "Problem Solving",
+      icon: Trophy,
       color: "bg-red-100 dark:bg-red-900 text-red-600 dark:text-red-400",
       skills: [
-        { name: "Prometheus", level: 75 },
-        { name: "Grafana", level: 80 },
-        { name: "CloudWatch", level: 83 },
+        { name: "LeetCode (1000+)", level: 95 },
+        { name: "Data Structures", level: 90 },
+        { name: "Algorithms", level: 88 },
       ],
     },
     {
-      title: "Database & Storage",
+      title: "Database & Tools",
       icon: Database,
       color: "bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-400",
       skills: [
+        { name: "MongoDB", level: 85 },
         { name: "PostgreSQL", level: 80 },
-        { name: "MongoDB", level: 75 },
-        { name: "S3/Blob Storage", level: 83 },
+        { name: "Git/GitHub", level: 90 },
       ],
     },
   ];
@@ -70,7 +70,7 @@ export default function SkillsSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Technical Skills</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive expertise in cloud technologies and modern development practices
+            Comprehensive expertise in full-stack development, mobile applications, and competitive programming
           </p>
         </div>
 

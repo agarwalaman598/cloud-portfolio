@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Cloud } from "lucide-react";
+import { Code, Smartphone } from "lucide-react";
 import profileImage from "@assets/image_1752414151408.png";
 
 export default function HeroSection() {
@@ -27,12 +27,12 @@ export default function HeroSection() {
               <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white dark:border-slate-700 shadow-2xl animate-float">
                 <img
                   src={profileImage}
-                  alt="Aman Agarwal - Cloud Engineer"
+                  alt="Aman Agarwal - Full Stack Developer"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary dark:bg-accent rounded-full flex items-center justify-center shadow-lg">
-                <Cloud className="text-white text-lg" />
+                <Code className="text-white text-lg" />
               </div>
             </div>
           </div>
@@ -41,11 +41,11 @@ export default function HeroSection() {
             <span className="gradient-text">Aman Agarwal</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-6 animate-slide-up animate-delay-200">
-            Cloud Engineer & DevOps Specialist
+            Full Stack Developer & Problem Solver
           </p>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 animate-slide-up animate-delay-400">
-            Passionate about building scalable cloud infrastructure and automating deployment pipelines.
-            Experienced in AWS, Azure, Kubernetes, and modern DevOps practices.
+            Passionate about building end-to-end applications with Java, Python, and modern frameworks.
+            Expert in MERN stack, Flutter mobile development, and competitive programming on LeetCode.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up animate-delay-600">
